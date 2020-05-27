@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Projects</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/screen.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <style>
+    	.collapsible {
+    		cursor: pointer;
+    		padding: 18px;
+    		width: 100%;
+    		border: none;
+    		text-align: left;
+    		outline: none;
+    	}
+    	.active, .collapsible:hover {
+    		border: 1px solid #608699;
+    	}
+
+    	.content {
+    		padding: 0 18px;
+    		display: none;
+    		overflow: hidden;
+    		background-color: #f1f1f1;
+    	}
+    </style>
+
+    <style>
+    	* {box-sizing: border-box}
+    	.containerbar {
+    		width: 100%;
+    		background-color: #ddd;
+    	}
+    	.skills {
+    		text-align: right;
+    		margin-top: -17px;
+    		padding-bottom: 15px;
+    		color: white;
+    		height: 5px;
+    		font-size: 2px;
+    	}
+    	.python {width: 68%; background-color: #DA70D6;}
+    	.html {width: 65%; background-color: #4CAF50;}
+    	.css {width: 60%; background-color: #2196F3;}
+    	.js {width: 35%; background-color: #f44336;}
+    	.java {width: 35%; background-color: #FFA500;}
+    	.php {width: 0%; background-color: #808080;}
+    </style>
+
+    <style>
+    	#calendar{
+    		background-color: #fff;
+    		width: 50%;
+    		height: 190px;
+    		border-radius: 10px;
+    		overflow: hidden;
+    		text-align: center;
+    	}
+    	#calendar .yearMon{
+    		background-color: #ddd;
+    		padding: 5px 0;
+    	}
+    	#calendar .date{
+    		border: 2px solid #ddd;
+    		color: #405c71;
+    		font-size: 50px;
+    		font-weight: bold;
+    	}
+    </style>
+
+
+        
+	</head>
+	
+	<body>
+		
+		<header class="section">
+			
+			<!-- container -->
+			<div class="container">
+				<h1>Welcome to Xun's homepage</h1>
+
+				<nav class="site-nav">
+					<ul class="group">
+						<li><a href="index.html">Home</a></li>
+						<li class="hide-small"><a href="about.html">About</a></li>
+						<li class="hide-small"><a href="projects.html">Projects</a></li>
+						<li class="hide-small"><a href="blogs.html">Blogs</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+				</nav>
+			</div><!-- /container -->
+			
+		</header>
+		
+		<div class="content-area group section">
+			
+			<!-- container -->
+			<div class="container">
+				
+				<!-- row -->
+				<div class="row">
+					
+					<!-- col -->
+					<div class="col col-md-4 push-down-sm">
+						
+						<!-- skill -->
+						<h3>Skills</h3>
+
+						<p>Python</p>
+						<div class="containerbar">
+							<div class="skills python">68%</div>
+						</div>
+
+						<p>HTML</p>
+						<div class="containerbar">
+							<div class="skills html">65%</div>
+						</div>
+
+						<p>CSS</p>
+						<div class="containerbar">
+							<div class="skills css">60%</div>
+						</div>
+
+						<p>JavaScript</p>
+						<div class="containerbar">
+							<div class="skills js">35%</div>
+						</div>
+
+						<p>Java</p>
+						<div class="containerbar">
+							<div class="skills java">35%</div>
+						</div>
+
+						<p>PHP</p>
+						<div class="containerbar">
+							<div class="skills php">0%</div>
+						</div>
+						<!-- skill -->
+
+
+						<br>
+						<!-- calendar -->
+						<h3>Calendar</h3>
+						<div id="calendar">
+							<div class="yearMon"></div>
+							<div class="date"></div>
+							<div class="week"></div>
+							<p id="demo"></p>
+						</div>
+
+						<!-- calendar -->
+						
+						
+					</div><!-- /col -->
+
+					<!-- col -->
+					<div class="col col-md-8 sidebar ">
+						<h2>My Projects</h2>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Build an eCommerce Website Bookstore Website</button>
+						<div class="content"><p>This project is to build an eCommerce Website (with PayPal and credit card payment) with Java Servlet, JSP & Hibernate. In this website, customers can view new books, best-selling books, and most favored books on the home page, search for books, View books listed by category, view book’s details and reviews, write reviews for books, order books, check their order status and shopping history,and they must register to write review and purchase books. As for the employees, they can manage admin users, manage categories, manage books, manage customers, manage reviews (but cannot write reviews), manage orders (but cannot create orders) and view statistical information. We can see more details in documents file.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/Build-an-eCommerce-Website-Bookstore-Website-Project">>Details</a></h2></p></div>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Explore Yelp Dataset</h2></button>
+						<div class="content"><p>In this project, we explore the datasets of yelp, do the EDA, and in the machine leanring part, we do the sentimental analysis, make sentiment prediction, do the star rating prediction based on the review text, and we also explore the top popular categories and business in IL.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/Explore-Yelp-Dataset_Star-prediction-sentiment-prediction-business-distribution-of-IL">>Details</a></p></div>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Rest API</h2></button>
+						<div class="content"><p>The project is to create a framework for any project and practice basic and advanced functions: GET, POST, JSON and XML Schema, GPath for JSON.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/REST-API">>Details</a></p></div>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Twitter Sentiment Analysis</h2></button>
+						<div class="content"><p>This project is an attempt to solve the problem of text classification on twitter text datas— the task is to predict whether a tweet is racist/sexist or not. The data has been downloaded from Analytics Vidhya.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/twitter_sentiment_analysis">>Details</a></p></div>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Pig Game</h2></button>
+						<div class="content"><p>This project is to build the pig game with javascript.Game Rule:Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":If the player rolls a 1, they score nothing and it becomes the next player's turn. If the player rolls any other number, it is added to their turn total and the player's turn continues. If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn. The first player to score 100 or more points wins.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/pig-game">>Details</a></p></div>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Budget</h2></button>
+						<div class="content"><p>This project is to build a tool  to manage budget with javascript.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/budgety">>Details</a></p></div>
+
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;Tip Calculator</h2></button>
+						<div class="content"><p>This project is to build a tip calculator with javascript.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/TipCalculator">>Details</a></p></div>
+						
+						<button type="button" class="collapsible"><h2>&#9830;&nbsp;&nbsp;To-Do-List</h2></button>
+						<div class="content"><p>This project is to build a To-Do-List with javascript.&nbsp;&nbsp;<a href="https://github.com/Aa1024xx/ToDoList">>Details</a></p></div>
+
+					</div><!-- /col -->
+					
+					
+				</div><!-- /row -->
+				
+			</div><!-- /container -->
+			
+		</div>
+
+		<footer>
+			<p>&copy; 2020 Xun Xia</p>
+			<p><a href="https://github.com/Aa1024xx" class="fa fa-github-square" style="font-size:30px"></a>&nbsp;&nbsp;&nbsp;<a href="mailto:XunXia2021@u.northwestern.edu?subject=The%20subject%20of%20the%20mail"><i  class="fa" style="font-size:30px">&#xf0e0;</i></a></p>
+		</footer>
+		
+	</body>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+
+		$(function(){
+			var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+			var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+			var nowDate = new Date();     
+			var year = nowDate.getFullYear();    
+			var month = months[nowDate.getMonth()];    
+			var date = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();
+			var week = days[nowDate.getDay()];
+
+		$(".yearMon").text(year+" "+month);
+	    $(".date").text(date);
+	    $(".week").text(week);
+	});
+
+	</script>
+
+	<script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jun 6, 2020 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+       // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+       // If the count down is over, write some text 
+      if (distance < 0) {
+      	clearInterval(x);
+      	document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+  }, 1000);
+    </script>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
+	
+	<script src="https://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        text_foled('.p1', 120);
+    });
+    $(function () {
+        text_foled('.p2', 120);
+    });
+    $(function () {
+        text_foled('.p3', 120);
+    });
+    $(function () {
+        text_foled('.p4', 120);
+    });
+
+    /**
+     * jQuery text unfold
+     * @param clas：container
+     * @param num：number of words to show
+     */
+    function text_foled(clas, num){
+        
+        var num = num;
+        var a = $("<a></a>").on('click', showText).addClass('a-text').text("【unfold】");
+        var b = $("<a></a>").on('click', showText).addClass('a-text').text("【fold】");
+        var p = $("<p></p>").addClass('p0');
+        var str = $(clas).text();
+        $(clas).after(p);
+        if (str.length < num) {
+            var text = str.substring(0, num) + "...";
+            $(clas).html(text).append(a);
+        }
+        $('.p0').html(str).append(b);
+        function showText() {
+            $(this).parent().hide().siblings().show();
+        }
+    }
+    </script>
+
+</html>

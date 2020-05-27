@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>About me</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/screen.css">
+		<script type="text/javascript" src="js/modernizr.js"></script>
+	</head>
+	
+	<body>
+		
+		<header class="section">
+			
+			<!-- container -->
+			<div class="container">
+				<h1>Welcome to Xun's homepage</h1>
+
+				<nav class="site-nav">
+					<ul class="group">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="hide-small"><a href="projects.html">Projects</a></li>
+						<li class="hide-small"><a href="blogs.html">Blogs</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+				</nav>
+			</div><!-- /container -->
+			
+		</header>
+		
+		<div class="content-area group section">
+			
+			<!-- container -->
+			<div class="container">
+				
+				<!-- row -->
+				<div class="row">
+					
+					<!-- col -->
+					<div class="col col-md-11 push-down-sm">
+						
+						<h2> My name in different languages</h2>
+
+						<!-- row -->
+						<div class="row boxes">
+
+							<!-- col -->
+							<div class="col col-sm-6 col-lg-3">
+								<!-- box-a -->
+								<div class="box-a">
+									<p>中文：夏珣</p>
+								</div><!-- /box-a -->
+							</div><!-- /col -->
+							
+							<!-- col -->
+							<div class="col col-sm-6 col-lg-3">
+								<!-- box-a -->
+								<div class="box-a">
+									<p>English: Xun Xia</p>
+								</div><!-- /box-a -->
+							</div><!-- /col -->
+							
+							<!-- col -->
+							<div class="col col-sm-6 col-lg-3">
+								<!-- box-a -->
+								<div class="box-a">
+									<p>日本語: カ シュン(ka shunn)</p>
+								</div><!-- /box-a -->
+							</div><!-- /col -->
+							
+							<!-- col -->
+							<div class="col col-sm-6 col-lg-3">
+								<!-- box-a -->
+								<div class="box-a">
+									<p>русск: тсун лет</p>
+								</div><!-- /box-a -->
+							</div><!-- /col -->
+	
+						</div><!-- /row -->
+
+						<p>
+						<div><input type="text" id="ttsText" placeholder="Would you like to try pronouncing my name in Chinese? Copy and paste the name here." size="85">
+							<input type="button" id="tts_btn" onclick="doTTS()" value="play">
+				        </div>
+				        <div id="bdtts_div_id">
+				        	<audio id="tts_autio_id" autoplay="autoplay"><source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=9&text=播报内容" type="audio/mpeg">
+				        	<embed id="tts_embed_id" height="0" width="0" src=""></audio>
+				        </div>
+						</p>
+
+						<p><b>About</b> languages I can speak, my mother language is Chinese mandarin. Since I am studying in USA, I also can speak English, though it’s not as good as I expected. I am trying to improve my oral English ability. Besides, I could speak a little bit Korea, Japanese, Russian and a tiny bit Uighur language. It's great to explore the world and meet people from different background. I like listening to others' stories and I gain thoughts and experience from them.</p>
+
+						<p><b>About</b> my hobbies, my favorite one is strolling around the supermarket. I like the atmosphere of exquisite goods and enjoy watching the crowds. Besides, I enjoy painting, photographing, wandering around the museums, seeing exhibitions, exploring local snacks, playing cucurbit flute, practicing yoga and dancing.</p>
+
+						<p><b>About</b> my research interest, currently, I like exploring knowledge about Social Network Analysis and Big Data.</p>
+
+						<p><b>About</b> my future plan, in order to find a SDE job, I will do some projects related to web/app development in the future.</p>
+						
+					</div><!-- /col -->
+					
+				</div><!-- /row -->
+				
+			</div><!-- /container -->
+			
+		</div>
+
+		<footer>
+			<p>&copy; 2020 Xun Xia</p>
+			<p><a href="https://github.com/Aa1024xx" class="fa fa-github-square" style="font-size:30px"></a>&nbsp;&nbsp;&nbsp;<a href="mailto:XunXia2021@u.northwestern.edu?subject=The%20subject%20of%20the%20mail"><i  class="fa" style="font-size:30px">&#xf0e0;</i></a></p>
+		</footer>
+		
+		
+	</body>
+	<script type="text/javascript"> 
+		function doTTS(){
+			var ttsDiv = document.getElementById('bdtts_div_id');
+			var ttsAudio = document.getElementById('tts_autio_id');
+			var ttsText = document.getElementById('ttsText').value;
+			
+			// cannot play
+			/*var ssrcc = 'http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=10&text='+ttsText;
+			document.getElementById('tts_source_id').src=ssrcc;*/
+			
+			// it's ok to play the replacement.
+			ttsDiv.removeChild(ttsAudio);
+			var au1 = '<audio id="tts_autio_id" autoplay="autoplay">';
+			var sss = '<source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=9&text='+ttsText+'" type="audio/mpeg">';
+			var eee = '<embed id="tts_embed_id" height="0" width="0" src="">';
+			var au2 = '</audio>';
+			ttsDiv.innerHTML = au1 + sss + eee + au2;
+			
+			ttsAudio = document.getElementById('tts_autio_id');
+			
+			ttsAudio.play();
+		}
+		</script>
+</html>
